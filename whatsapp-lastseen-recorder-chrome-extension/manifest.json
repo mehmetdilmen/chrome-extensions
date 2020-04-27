@@ -1,0 +1,26 @@
+{
+  "name": "Whatsapp Listening",
+  "description": "If you want to look last seen your friend and if you want to get seen notifications. You can use it.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Whatsapp Listening",
+    "default_icon": "whatsapp.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "128": "whatsapp.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "activeTab"
+  ],
+  "web_accessible_resources": ["index.html"]
+}
